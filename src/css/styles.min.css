@@ -1,0 +1,191 @@
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-shadow: inset 0 0 0 10px #eff0dd, 0 0 0 2px black, 0 0 0 5px #eff0dd, 5px 5px 0 100px #343839;
+          box-shadow: inset 0 0 0 10px #eff0dd, 0 0 0 2px black, 0 0 0 5px #eff0dd, 5px 5px 0 100px #343839;
+  border: 1x solid black;
+  background-color: #fff;
+}
+
+.cell--dark {
+  background-color: #343839;
+}
+
+.brother {
+  color: aquamarine;
+}
+
+.btn-ai {
+  width: 100px;
+  height: 100px;
+}
+
+#listField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#listField ul {
+  font-size: 10px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aMove {
+  -webkit-box-shadow: inset 1px 1px 100px 16px rgba(0, 68, 255, 0.8);
+          box-shadow: inset 1px 1px 100px 16px rgba(0, 68, 255, 0.8);
+}
+
+.activeCell {
+  -webkit-box-shadow: inset 1px 1px 100px 16px rgba(82, 255, 36, 0.7);
+          box-shadow: inset 1px 1px 100px 16px rgba(82, 255, 36, 0.7);
+}
+
+#div1 {
+  margin: 0 auto;
+  width: 50%;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  color: green;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 12.5%;
+          flex: 0 1 12.5%;
+  max-width: 12.5%;
+  width: 100%;
+  height: 100px;
+  background-color: #eff0dd;
+}
+
+ul p {
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  background-image: url(/images/works.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+ul .player {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+ul .player:hover {
+  -webkit-box-shadow: inset 1px 1px 100px 16px rgba(255, 255, 0, 0.5);
+          box-shadow: inset 1px 1px 100px 16px rgba(255, 255, 0, 0.5);
+}
+
+.figure {
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.king--white {
+  background-image: url(/images/figures/WKing.png);
+}
+
+.king--black {
+  background-image: url(/images/figures/BKing.png);
+}
+
+.queen--white {
+  background-image: url(/images/figures/WQueen.png);
+}
+
+.queen--black {
+  background-image: url(/images/figures/BQueen.png);
+}
+
+.pawn--white {
+  background-image: url(/images/figures/WPawn.png);
+}
+
+.pawn--black {
+  background-image: url(/images/figures/BPawn.png);
+}
+
+.rook--white {
+  background-image: url(/images/figures/WRook.png);
+}
+
+.rook--black {
+  background-image: url(/images/figures/BRook.png);
+}
+
+.knight--white {
+  background-image: url(/images/figures/WKnight.png);
+}
+
+.knight--black {
+  background-image: url(/images/figures/BKnigt.png);
+}
+
+.bishop--black {
+  background-image: url(/images/figures/BBishop.png);
+}
+
+.bishop--white {
+  background-image: url(/images/figures/WBishop.png);
+}

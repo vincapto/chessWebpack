@@ -1,0 +1,179 @@
+// @import "~normalize.css/normalize";
+
+// .error:hover {
+//     background-color: #fee;
+// }
+// .error--serious {
+//     @extend .error;
+//     border-width: 3px;
+// }
+
+// .error {
+//     border: 1px #f00;
+//     background-color: #fdd;
+//     &--serious {
+//         @extend .error;
+//         border-width: 3px;
+//     }
+// }
+
+$board-dark: #343839;
+$board-light: #eff0dd;
+
+p {
+  padding: 0;
+  margin: 0;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#field {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // max-width: 500x;
+  width: 100%;
+
+  box-shadow: inset 0 0 0 10px $board-light, 0 0 0 2px black,
+    0 0 0 5px $board-light, 5px 5px 0 100px $board-dark;
+
+  border: 1x solid black;
+  background-color: #fff;
+}
+
+.cell--dark {
+  background-color: $board-dark;
+}
+
+.brother {
+  color: aquamarine;
+}
+
+.btn-ai {
+  width: 100px;
+  height: 100px;
+}
+
+#listField {
+  display: flex;
+  flex-direction: column;
+  ul {
+    font-size: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.aMove {
+  box-shadow: inset 1px 1px 100px 16px rgba(0, 68, 255, 0.8);
+}
+
+.activeCell {
+  box-shadow: inset 1px 1px 100px 16px rgba(82, 255, 36, 0.7);
+
+  // background-color: yellow;
+}
+
+#div1 {
+  margin: 0 auto;
+  max-width: 409px;
+  padding-top: 108px;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    color: green;
+
+    flex: 0 1 12.5%;
+    max-width: 12.5%;
+    width: 50px;
+    height: 50px;
+
+    background-color: $board-light;
+    // display: inline-block;
+  }
+
+  p {
+    // position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    background-image: url('../images/works.jpg');
+    background-position: center;
+    background-size: contain;
+  }
+
+  .player {
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: inset 1px 1px 100px 16px rgba(255, 255, 0, 0.5);
+    }
+  }
+}
+
+$cell-size: 80%;
+.figure {
+  margin: 0 auto;
+  width: $cell-size;
+  height: $cell-size;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.king--white {
+  background-image: url('../images/figures/WKing.png');
+}
+.king--black {
+  background-image: url('../images/figures/BKing.png');
+}
+
+.queen--white {
+  background-image: url('../images/figures/WQueen.png');
+}
+.queen--black {
+  background-image: url('../images/figures/BQueen.png');
+}
+
+.pawn--white {
+  background-image: url('../images/figures/WPawn.png');
+}
+.pawn--black {
+  background-image: url('../images/figures/BPawn.png');
+}
+
+.rook--white {
+  background-image: url('../images/figures/WRook.png');
+}
+.rook--black {
+  background-image: url('../images/figures/BRook.png');
+}
+
+.knight--white {
+  background-image: url('../images/figures/WKnight.png');
+}
+.knight--black {
+  background-image: url('../images/figures/BKnigt.png');
+}
+
+.bishop--black {
+  background-image: url('../images/figures/BBishop.png');
+}
+.bishop--white {
+  background-image: url('../images/figures/WBishop.png');
+}
